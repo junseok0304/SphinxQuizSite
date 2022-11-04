@@ -4,12 +4,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>스핑크스 퀴즈</title>
+		<link rel="stylesheet" href="./css/index.css">
         <style>
-            
         </style>
     </head>
     <body>
+        <div>스핑크스 퀴즈</div>
+		<audio autoplay loop>
+			<source src="./bgm/kart_bgm.m4a" type="audio/mp3">
+		</audio>
 
+		<button onclick="location.href='gameover.html'">게임 오버</button>
+		<button onclick="location.href='gameclear.html'">게임 클리어</button>
+		<form>
+			<input type = "submit" name = "submit" value = "게임 시작" />
+			<input type = "reset" name = "reset"  value = "게임 오버" />
+			<input type = "button" name = "ok" onclick="alert('Hello World!')" value = "완료" />
+		</form>
+		<img id="bgimg" src="./img/sphinx.png">
+		<img id="img1" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+		<script src="./js/cursor.js"></script>
     </body>
 </html>
