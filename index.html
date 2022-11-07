@@ -11,22 +11,37 @@
     </head>
     <body>
         <div>스핑크스 퀴즈</div>
+
+		<audio id="audioContainer"> <!-- audio play를 위함 -->
+			<source id="audioSource" src="" /> <!-- audio 파일 -->
+			Your browser does not support the audio format.
+		</audio>
+		<div class="js-onOffWrap">
+			<button class="js-playBtn">♬ Play Music</button>
+			<button class="js-stopBtn">♬ Stop Music</button>
+		</div>      
+		<div class="js-audioNextBtn">⏯</div>
+		<hr>
 		<audio autoplay loop>
 			<source src="./bgm/kart_bgm.m4a" type="audio/mp3">
 		</audio>
-
+		<div>
 		<form>
-			<input type = "reset" name = "reset"  value = "BGM 켜기" />
-			<input type = "reset" name = "reset"  value = "BGM 끄기" />
-			<input type = "button" name = "ok" onclick="alert('Q1')" value = "Q1" />
-			<input type = "button" name = "ok" onclick="alert('Q2')" value = "Q2" />
-			<input type = "button" name = "ok" onclick="alert('Q3')" value = "Q3" />
+			<div>
+			<input class="buttonbgm" type = "reset" name = "reset"  value = "BGM 켜기♬" />
+			<input class="buttonbgm" type = "reset" name = "reset"  value = "BGM 끄기♬" />
+			</div>
+			<input class="button" type = "button" name = "ok" onclick="alert('게임 시작')" value = "게임 시작" />
+			<input class="button" type = "button" name = "ok" onclick="alert('Q1')" value = "Q1" />
+			<input class="button" type = "button" name = "ok" onclick="alert('Q2')" value = "Q2" />
+			<input class="button" type = "button" name = "ok" onclick="alert('Q3')" value = "Q3" />
 		</form>
-
-		<button onclick="location.href='gameover.html'">게임 오버</button>
-		<button onclick="location.href='gameclear.html'">게임 클리어</button>
+		</div>
+		<button class="button" onclick="location.href='gameover.html'">게임 오버</button>
+		<button class="button" onclick="location.href='gameclear.html'">게임 클리어</button>
 		<img id="bgimg" src="./img/sphinx.png">
 		<img id="img1" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
 		<script src="./js/cursor.js"></script>
+		<script src="./js/music.js"></script>
     </body>
 </html>
