@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +8,51 @@
         <style>
         </style>
     </head>
+	<!-- HTML head 끝-->
     <body>
 		<header>
         <h1>스핑크스 퀴즈</h1>
-		<nav>
-		<ul>
-			<form>
-				<button class="button" type = "button" onclick="location.href='Q1.html'">게임 시작</button >
-				<button class="button" type = "button" onclick="location.href='Q1.html'">Q1</button >	
-				<button class="button" type = "button" onclick="location.href='Q2.html'">Q2</button >
-				<button class="button" type = "button" onclick="location.href='Q3.html'">Q3</button >
-				<button class="button" type = "button" onclick="location.href='gameover.html'">게임 오버</button>
-				<button class="button" type = "button" onclick="location.href='gameclear.html'">게임 클리어</button>
-			</form>
-		</ul>
-	</nav>
-		</header>
-		<audio id="audioContainer" autoplay loop> <!-- audio play를 위함 -->
-			<source id="audioSource" src="./bgm/kart_bgm.m4a" /> <!-- audio 파일 -->
-			오디오 포맷이 지원되지 않는 브라우져 입니다.
+			<nav>
+				<ul>
+					<form>
+						<button class="button" type = "button" onclick="location.href='Q1.html'">게임 시작</button >
+						<button class="button" type = "button" onclick="location.href='Q1.html'">Q1</button >	
+						<button class="button" type = "button" onclick="location.href='Q2.html'">Q2</button >
+						<button class="button" type = "button" onclick="location.href='Q3.html'">Q3</button >
+						<button class="button" type = "button" onclick="location.href='gameover.html'">게임 오버</button>
+						<button class="button" type = "button" onclick="location.href='gameclear.html'">게임 클리어</button>
+					</form>
+				</ul>
+			</nav>
+		</header> <!-- HEADER 끝-->
+		<!-- audio play -->
+		<audio id="audioContainer" autoplay loop>
+			<source id="audioSource" src="./bgm/kart_bgm.m4a" /> 오디오 포맷이 지원되지 않는 브라우져 입니다.
 		</audio>
+
 		<form>
-		<div class="js-onOffWrap">
-			<button class="js-playBtn" location.reload();>BGM 켜기</button>
-			<button class="js-stopBtn" location.reload();>BGM 끄기</button>
+			<div class="js-onOffWrap">
+				<button id="buttonbgm" class="js-playBtn" location.reload();>BGM 켜기</button>
+				<button id="buttonbgm" class="js-stopBtn" type = "button" >BGM 끄기</button>
+			</div>
+		</form> <!-- audio play 끝-->
+		<!-- 내용을 넣는 부분 -->
+		<div class="main">
+			<h3 class="co" style="font-size: 90px;">스핑크스 퀴즈에 온것을 환영하오 하 하 하</h3>
+			<h3 class="co" style="font-size: 90px;">문제를 맞추면 보물을 주지!</h3>
+			<h3 class="co" style="font-size: 90px;">대신에 문제를 못맞추면 널 잡아먹겠다!</h3>
+
 		</div>
+
+		<form class="startbutton">
+			<button class="custom-btn btn-12" type = "button" onclick="location.href='Q1.html'" ><span>눌러서 게임 시작!</span><span class="blinking">게임 시작</span></button>
 		</form>
+
+		<!-- 배경 및 커서 이미지 -->
 		<img id="bgimg" src="./img/sphinx.png">
-		<img id="img1" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+		<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+		
+		<!-- js 파일 -->
 		<script src="./js/cursor.js"></script>
 		<script src="./js/music.js"></script>
     </body>

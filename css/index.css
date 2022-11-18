@@ -17,6 +17,7 @@ nav {
 }
 
 h1 {
+    font-size: 35px;
     display: inline-block;
     vertical-align: middle;
     color: white;
@@ -56,6 +57,20 @@ a {
     background: teal;
 }
 
+.startbutton {
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 75%;
+    margin: 90px 100px;
+}
+
+.main {
+    align-items: center;
+    position: relative;
+    margin: 30px 100px;
+}
+
 a:hover {
     background: yellowgreen;
 }
@@ -69,8 +84,6 @@ html {
 }
 
 
-
-
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -82,9 +95,11 @@ html {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
 }
 
-.buttonbgm {
+#buttonbgm {
     background-color: #eea941; /* Green */
     border: none;
     color: white;
@@ -95,4 +110,135 @@ html {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
 }
+
+.js-onOffWrap {
+    align-items: right;
+    margin: 30px 30px;
+}
+@keyframes textColorAnimation {
+    0% {
+        color: blue;
+        background: linear-gradient(0deg, rgb(255, 47, 0) 0%, rgb(241, 182, 182) 100%);
+    }
+    50% {
+        color: green;
+        background: linear-gradient(0deg, rgb(0, 246, 107) 0%, rgb(154, 241, 166) 100%);
+    
+    }
+    100% {
+        color: red;
+        background: linear-gradient(0deg, rgb(7, 112, 248) 0%, rgb(194, 208, 255) 100%);
+    
+    }
+}
+
+.blinking {
+    animation-name: textColorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+/* 12 */
+.btn-12{
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 160px;
+    height: 70px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+}
+.btn-12 span {
+    animation-name: textColorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+

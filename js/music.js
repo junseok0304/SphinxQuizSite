@@ -2,7 +2,8 @@ const audioContainer = document.querySelector('#audioContainer');
 const playBtn = document.querySelector('.js-playBtn');
 const stopBtn = document.querySelector('.js-stopBtn')
 
-const MUSIC_COUNT = 3; // 음악 갯수
+const MUSIC_COUNT = 1; // 음악 갯수
+
 let currentAudio = 1; // 현재 음악
 
 function playAudio() {
@@ -12,7 +13,7 @@ function playAudio() {
 }
 
 function stopAudio() {
-  audioContainer.pause();  
+  audioContainer.pause();
 }
 
 function loadAudio() {
@@ -22,7 +23,18 @@ function loadAudio() {
   playAudio();
 }
 
-loadAudio();
-playAudio();
-stopBtn.addEventListener('click', stopAudio);
+function handleNextButtonClick() { 
+
+  if (currentAudio < MUSIC_COUNT) {
+    currentAudio += 1;
+  } else {
+    currentAudio = 1;
+  }
+  
+  audioContainer.pause();
+  loadAudio();
+}
+
+
 playBtn.addEventListener('click', loadAudio);
+stopBtn.addEventListener('click', stopAudio);
