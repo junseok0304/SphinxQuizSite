@@ -9,7 +9,7 @@
         </style>
     </head>
 	<!-- HTML head 끝-->
-    <body>
+    <body style="overflow-x: hidden; overflow-y: hidden;">
 		<header>
         <h1>스핑크스 퀴즈</h1>
 			<nav>
@@ -26,22 +26,12 @@
 			</nav>
 		</header> <!-- HEADER 끝-->
 		<!-- audio play -->
-		<audio id="audioContainer" autoplay loop>
-			<source id="audioSource" src="./bgm/kart_bgm.m4a" /> 오디오 포맷이 지원되지 않는 브라우져 입니다.
-		</audio>
-
-		<form>
-			<div class="js-onOffWrap">
-				<button id="buttonbgm" class="js-playBtn" location.reload();>BGM 켜기</button>
-				<button id="buttonbgm" class="js-stopBtn" type = "button" >BGM 끄기</button>
-			</div>
-		</form> <!-- audio play 끝-->
+		
 		<!-- 내용을 넣는 부분 -->
 		<div class="main">
 			<h3 class="co" style="font-size: 90px;">스핑크스 퀴즈에 온것을 환영하오 하 하 하</h3>
 			<h3 class="co" style="font-size: 90px;">문제를 맞추면 보물을 주지!</h3>
 			<h3 class="co" style="font-size: 90px;">대신에 문제를 못맞추면 널 잡아먹겠다!</h3>
-
 		</div>
 
 		<form class="startbutton">
