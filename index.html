@@ -1,51 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>스핑크스 퀴즈</title>
-		<link rel="stylesheet" href="./css/index.css">
-        <style>
-        </style>
     </head>
-	<!-- HTML head 끝-->
-    <body style="overflow-x: hidden; overflow-y: hidden;">
-		<header>
-        <h1>스핑크스 퀴즈</h1>
-			<nav>
-				<ul>
-					<form>
-						<button class="button" type = "button" onclick="location.href='Q1.html'">게임 시작</button >
-						<button class="button" type = "button" onclick="location.href='Q1.html'">Q1</button >	
-						<button class="button" type = "button" onclick="location.href='Q2.html'">Q2</button >
-						<button class="button" type = "button" onclick="location.href='Q3.html'">Q3</button >
-						<button class="button" type = "button" onclick="location.href='gameover.html'">게임 오버</button>
-						<button class="button" type = "button" onclick="location.href='gameclear.html'">게임 클리어</button>
-					</form>
-				</ul>
-			</nav>
-		</header> <!-- HEADER 끝-->
-		<!-- audio play -->
-		
-		<!-- 내용을 넣는 부분 -->
-		<div class="main">
-			<h3 class="co" style="font-size: 90px;">스핑크스 퀴즈에 온것을 환영하오 하 하 하</h3>
-			<h3 class="co" style="font-size: 90px;">문제를 맞추면 보물을 주지!</h3>
-			<h3 class="co" style="font-size: 90px;">대신에 문제를 못맞추면 널 잡아먹겠다!</h3>
-		</div>
-
-		<form class="startbutton">
-			<button class="custom-btn btn-12" type = "button" onclick="location.href='Q1.html'" ><span>눌러서 게임 시작!</span><span class="blinking">게임 시작</span></button>
-		</form>
-
-		<!-- 배경 및 커서 이미지 -->
-		<img id="bgimg" src="./img/sphinx.png">
-		<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
-		
-		<!-- js 파일 -->
-		<script src="./js/cursor.js"></script>
-		<script src="./js/music.js"></script>
+<body style="overflow-x: hidden;">        
+    <iframe src="./main.html" style="width:1440px; height:1080px; border:none">
+    </iframe>
+    <iframe src="./bgm.html" style="width:1440px; height:95px; border:none">
+    </iframe> 
     </body>
 </html>
-
 
