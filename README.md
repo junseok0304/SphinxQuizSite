@@ -15,4 +15,10 @@ http://www.hungryboarder.com/index.php?mid=Move&document_srl=42178525
 https://blog.naver.com/dbsgksdjq0/221913741121
 https://www.youtube.com/watch?v=J757v3bcg4U
 https://www.youtube.com/watch?v=km3dgUF9CDE&ab_channel=MusicSoul
-
+https://wonpaper.tistory.com/221
+https://charlesinfo.tistory.com/36
+https://webclub.tistory.com/354
+https://developer.mozilla.org/ko/docs/Web/HTML/Element/form
+http://www.tcpschool.com/javascript/js_event_eventListenerRegister
+https://thisisspear.tistory.com/16
+https://yong-nyong.tistory.com/6
