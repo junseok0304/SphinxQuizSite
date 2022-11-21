@@ -5,8 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Q1.</title>
-		<link rel="stylesheet" href="./css/index.css">
-        <style></style>
+		<link rel="stylesheet" href="./css/quiz.css">
+	<style>
+		.sub {
+			
+		}
+	</style>
     </head>
     <body>
 		<header>
@@ -14,15 +18,54 @@
 		<nav>
 		<ul>
 			<form>
-				<button class="button" type = "button" onclick="location.href='Q1.html'">남은 시간</button>
+				<button class="button" type = "button" onclick="location.href='Q1.html'"><div id="digit"></div></button>
 			</form>
 		</ul>
 	</nav>
+			<div id="myProgress"> <div id="myBar"></div>
+			</div>
 		</header>
+<br><br>
+<div class="main">
+	<h3 class="co" style="font-size: 60px;">첫 번째 퀴즈다!!!!!!</h3>
+	<h3 class="co" style="font-size: 80px;">공이 웃으면 ?</h3>
+	<h3 class="co" style="font-size: 45px;">시간안에 답을 맞춰라!!!!</h3>
+</div>
+<div class="sub">
+
+</div>
+
+<script>
+var i = 30;
+window.onload = function start() {
+    if (i == 30)
+    {
+        i = 29;
+        var digit = document.getElementById("digit"); 
+        var elem = document.getElementById("myBar");
+        var width = 29;
+        var id = setInterval(frame,1000);
+
+        function frame() {
+            if (width <= 0) {
+                clearInterval(id);
+                i=400;
+                digit.innerHTML = "남은 시간: " + width + "초";
+                alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
+				window.location.href="gameover.html";
+            } else {
+                digit.innerHTML = "남은 시간: " + width + "초";
+                width--;
+                elem.style.width = width + "px";
+            }
+		
+        }
+    }
+}
+</script>
 		<img id="bgimg" src="./img/sphinx.png">
 		<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
 		<script src="./js/cursor.js"></script>
     </body>
 </html>
-
 
