@@ -11,13 +11,22 @@
         <title> G A M E O V E R</title>
         <link rel="stylesheet" href="./css/gameover.css">
         <style></style>
+        <header>
+            <h1>G A M E  O V E R</h1>
+            <nav>
+                <ul>
+                    <form>
+                        <button class="button" type="button" onclick="location.href='main.html'">다시 도전?</button >
+                    </form>
+                </ul>
+            </nav>
+        </header>
+    <br><br>
     </head>
     <body>
         <audio onloadstart="this.volume=0.5" autoplay>
 			<source src="./bgm/crazyarcade_lose.mp3" type="audio/mp3">
 		</audio>
-        <div id="gmtitle">GAME OVER</div>
-        <button onclick="location.href='main.html'">다시 도전?</button >
         <img id="bgimg" src="./img/gameover.png">
         <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
 		<script src="./js/cursor.js"></script>

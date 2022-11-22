@@ -35,6 +35,5 @@ function handleNextButtonClick() {
   loadAudio();
 }
 
-
 playBtn.addEventListener('click', loadAudio);
 stopBtn.addEventListener('click', stopAudio);
