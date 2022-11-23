@@ -10,6 +10,29 @@
 		<meta http-equiv="Author" content="윤준석"/>
         <title>G A M E CLEAR!</title>
         <link rel="stylesheet" href="./css/gameclear.css">
+        <script>
+            function createDIV(){
+                //부모객체를 찾음
+                let obj = document.getElementById("parent");
+
+                //DOM객체 동적 생성
+                let newDIV = document.createElement("div");
+                newDIV.innerHTML = "스핑크스 : 약속한 대로 상을 주겠다!!<br>근데, 그 전에 말이지...<br>이건 10년 전 내가 이집트에 있을 때 말이네...<br>어쩌구 저쩌구.. TMI...<br>어쩌구 저쩌구.. TMI...<br><br>사람: 뭐야... 뭐저리 말이 많아..<br><br>이 문구 영역을 클릭해 들어가 보자!"
+                //newDIV.style.backgroundColor = "yellow";
+                newDIV.style.fontSize = "x-large";
+                newDIV.style.color = "RED";
+                newDIV.style.fontWeight = "bold"
+                newDIV.style.marginLeft = "50px";
+                newDIV.addEventListener("click", 
+                function() { 
+                    let p = this.parentElement 
+                    p.removeChild(this);
+                    parent.location.href = './hiddenPage.html';
+                } );
+                obj.appendChild(newDIV);
+            }
+            
+        </script>
         <header>
             <h1 class="stopload" onload="">G A M E  C L E A R !</h1>
             <nav>
@@ -24,7 +47,10 @@
     </head>
     <body>
         <h3 style="font-size: 35px; color: #f8be10; position: fixed; top: 82%; left: 2%; ">스핑크스 : 크으윽... 분하다... 문제를 다 맞추다니!!</h3>
-        <h3 style="font-size: 42px; color:aliceblue; position: fixed; top: 65%; left: 65%; ">제작자: 윤준석<br>제작기간: 2주<br>플레이 해주셔서 감사합니다!</h3>
+        <h3 style="font-size: 42px; color:aliceblue; position: fixed; top: 65%; left: 65%; ">제작자: 202214043 윤준석<br>제작기간: 3주<br>플레이 해주셔서 감사합니다!</h3>
+        <div id="parent">
+        <a href="javascript:createDIV()" style="font-size: 42px; color:red; position: fixed; top: 90%; left: 65%;">스핑크스의 마지막 유언 보기</a>
+        </div>
 
         <div class="firework"></div>
         <div class="firework"></div>
