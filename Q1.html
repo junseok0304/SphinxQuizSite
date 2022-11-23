@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="imagetoolbar" content="no"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta http-equiv="Title" content="QUIZ1"/>
-		<meta http-equiv="Author" content="윤준석"/>
-        <title>Q1.</title>
-		<link rel="stylesheet" href="./css/quiz.css">
-	<style>
-	</style>
-    </head>
-    <body>
-		<header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Title" content="QUIZ1" />
+    <meta http-equiv="Author" content="윤준석" />
+    <title>Q1.</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+<body>
+    <header>
         <h1>스핑크스 퀴즈 Q1.</h1>
-		<nav>
-		<ul>
-			<form>
-				<button class="button" type = "button" onclick="location.href='Q1.html'"><div id="digit"></div></button>
-			</form>
-		</ul>
-	</nav>
-			<div id="myProgress"> <div id="myBar"></div>
-			</div>
-		</header>
-<br><br>
-<div class="main">
-	<h3 class="co" style="font-size: 60px;">첫 번째 퀴즈다!!!!!!</h3>
-	<h3 class="co" style="font-size: 80px;">바나나가 웃으면 ?</h3>
-	<h3 class="co" style="font-size: 45px;">시간안에 답을 맞춰라!!!!</h3>
-</div>
-<div class="sub">
-    <form name="form">
-        <input type="radio" name="answer" value="v1" style="width:30px;height:30px;border:1px;">풋볼<br>
-        <input type="radio" name="answer" value="v2" style="width:30px;height:30px;border:1px;">중요한건 사우디의 꺾이지않는 마음<br>
-        <input type="radio" name="answer" value="v3" style="width:30px;height:30px;border:1px;">바나나킥<br>
-        <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">풉킥풉킥<br>
-        <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_1()">
-    <script type="text/javascript">
-    function quiz_1() {
-    if(form.answer[2].checked==true) window.location.href="Q2.html";
-    else parent.location.href="gameover.html";
-    }
-    </script>
-</div>
+        <nav>
+            <ul>
+                <form>
+                    <button class="button" type="button" onclick="location.href='Q1.html'">
+                        <div id="digit"></div>
+                    </button>
+                </form>
+            </ul>
+        </nav>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </header>
+    <br><br>
+    <div class="main">
+        <h3 class="co" style="font-size: 60px;">첫 번째 퀴즈다!!!!!!</h3>
+        <h3 class="co" style="font-size: 80px;">바나나가 웃으면 ?</h3>
+        <h3 class="co" style="font-size: 45px;">시간안에 답을 맞춰라!!!!</h3>
+    </div>
+    <div class="sub">
+        <form name="form">
+            <input type="radio" name="answer" value="v1" style="width:30px;height:30px;border:1px;">풋볼<br>
+            <input type="radio" name="answer" value="v2" style="width:30px;height:30px;border:1px;">중요한건 사우디의 꺾이지않는
+            마음<br>
+            <input type="radio" name="answer" value="v3" style="width:30px;height:30px;border:1px;">바나나킥<br>
+            <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">풉킥풉킥<br>
+            <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_1()">
 
-<script>
-var i = 30;
-window.onload = function start() {
-    if (i == 30)
-    {
-        i = 29;
-        var digit = document.getElementById("digit"); 
-        var elem = document.getElementById("myBar");
-        var width = 29;
-        var id = setInterval(frame,1000);
+            <script type="text/javascript">
+                function quiz_1() {
+                    if (form.answer[2].checked == true) window.location.href = "Q2.html";
+                    else parent.location.href = "gameover.html";
+                }
+            </script>
+    </div>
 
-        function frame() {
-            if (width <= 0) {
-                clearInterval(id);
-                i=400;
-                digit.innerHTML = "남은 시간: " + width + "초";
-                alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
-				parent.location.href="gameover.html";
-            } else {
-                digit.innerHTML = "남은 시간: " + width + "초";
-                width--;
-                elem.style.width = width + "px";
+    <script>
+        var i = 30;
+        window.onload = function start() {
+            if (i == 30) {
+                i = 29;
+                var digit = document.getElementById("digit");
+                var elem = document.getElementById("myBar");
+                var width = 29;
+                var id = setInterval(frame, 1000);
+
+                function frame() {
+                    if (width <= 0) {
+                        clearInterval(id);
+                        i = 400;
+                        digit.innerHTML = "남은 시간: " + width + "초";
+                        alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
+                        parent.location.href = "gameover.html";
+                    } else {
+                        digit.innerHTML = "남은 시간: " + width + "초";
+                        width--;
+                        elem.style.width = width + "px";
+                    }
+
+                }
             }
-		
         }
-    }
-}
-</script>
-		<img id="bgimg" src="./img/sphinx.png">
-		<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
-		<script src="./js/cursor.js"></script>
-    </body>
-</html>
+    </script>
+    <img id="bgimg" src="./img/sphinx.png">
+    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+    <script src="./js/cursor.js"></script>
+</body>
 
+</html>

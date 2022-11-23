@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html lang="ko">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="imagetoolbar" content="no"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta http-equiv="Title" content="QUIZ2"/>
-		<meta http-equiv="Author" content="윤준석"/>
-        <title>Q3.</title>
-		<link rel="stylesheet" href="./css/quiz.css">
-	<style>
-	</style>
-    </head>
-    <body>
-		<header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Title" content="QUIZ3" />
+    <meta http-equiv="Author" content="윤준석" />
+    <title>Q3.</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+
+<body>
+    <header>
         <h1>스핑크스 퀴즈 Q3.</h1>
-		<nav>
-		<ul>
-			<form>
-				<button class="button" type = "button" onclick="location.href='Q3.html'"><div id="digit"></div></button>
-			</form>
-		</ul>
-	</nav>
-			<div id="myProgress"> <div id="myBar"></div>
-			</div>
-		</header>
-<br><br>
-<div class="main">
-	<h3 class="co" style="font-size: 37px;">헉!!!!!! 자넨 천재인가???</h3>
-	<h3 class="co" style="font-size: 40px;">쓰읍,,, 마지막 문제일세, 이번엔 정말 어려울거야</h3>
-	<h3 class="co" style="font-size: 43px;">테이블의 세 빈칸에 들어갈 숫자를 순서대로 나열한걸 고르게나</h3>
-    <table>
-        <tr><th>3</th><th>2</th><th>3</th><th>3</th><th style="color:red">?</th></tr>
-        <tr><th>1</th><th>8</th><th>1</th><th>0</th><th style="color:blue">?</th></tr>
-        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th style="color:black">?</th></tr>
-    </table>
-</div>
-<div class="q3sub">
-    <form name="form">
-        <input type="radio" name="answer" value="v1" style="width:30px;height:30px;border:1px;">1,2,3<br>
-        <input type="radio" name="answer" value="v2" style="width:30px;height:30px;border:1px;">3,1,5<br>
-        <input type="radio" name="answer" value="v3" style="width:30px;height:30px;border:1px;">3,1,2<br>
-        <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">3,2,3<br>
-        <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">3,0,2<br>
-        <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_3()">
-    <script type="text/javascript">
-    function quiz_3() {
-    if(form.answer[1].checked==true) parent.location.href="gameclear.html";
-    else parent.location.href="gameover.html";
-    }
-    </script>
-</div>
+        <nav>
+            <ul>
+                <form>
+                    <button class="button" type="button" onclick="location.href='Q3.html'">
+                        <div id="digit"></div>
+                    </button>
+                </form>
+            </ul>
+        </nav>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </header>
+    <br><br>
+    <div class="main">
+        <h3 class="co" style="font-size: 37px;">헉!!!!!! 자넨 천재인가???</h3>
+        <h3 class="co" style="font-size: 40px;">쓰읍,,, 마지막 문제일세, 이번엔 정말 어려울거야</h3>
+        <h3 class="co" style="font-size: 43px;">테이블의 세 빈칸에 들어갈 숫자를 순서대로 나열한걸 고르게나</h3>
+        <table>
+            <tr>
+                <th>3</th>
+                <th>2</th>
+                <th>3</th>
+                <th>3</th>
+                <th style="color:red">?</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>8</th>
+                <th>1</th>
+                <th>0</th>
+                <th style="color:blue">?</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th style="color:black">?</th>
+            </tr>
+        </table>
+    </div>
+    <div class="q3sub">
+        <form name="form">
+            <input type="radio" name="answer" value="v1" style="width:30px;height:30px;border:1px;">1,2,3<br>
+            <input type="radio" name="answer" value="v2" style="width:30px;height:30px;border:1px;">3,1,5<br>
+            <input type="radio" name="answer" value="v3" style="width:30px;height:30px;border:1px;">3,1,2<br>
+            <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">3,2,3<br>
+            <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">3,0,2<br>
+            <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_3()">
+            <script type="text/javascript">
+                function quiz_3() {
+                    if (form.answer[1].checked == true) parent.location.href = "gameclear.html";
+                    else parent.location.href = "gameover.html";
+                }
+            </script>
+    </div>
 
-<script>
-var i = 30;
-window.onload = function start() {
-    if (i == 30)
-    {
-        i = 29;
-        var digit = document.getElementById("digit"); 
-        var elem = document.getElementById("myBar");
-        var width = 29;
-        var id = setInterval(frame,1000);
+    <script>
+        var i = 30;
+        window.onload = function start() {
+            if (i == 30) {
+                i = 29;
+                var digit = document.getElementById("digit");
+                var elem = document.getElementById("myBar");
+                var width = 29;
+                var id = setInterval(frame, 1000);
 
-        function frame() {
-            if (width <= 0) {
-                clearInterval(id);
-                i=400;
-                digit.innerHTML = "남은 시간: " + width + "초";
-                alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
-				parent.location.href="gameover.html";
-            } else {
-                digit.innerHTML = "남은 시간: " + width + "초";
-                width--;
-                elem.style.width = width + "px";
+                function frame() {
+                    if (width <= 0) {
+                        clearInterval(id);
+                        i = 400;
+                        digit.innerHTML = "남은 시간: " + width + "초";
+                        alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
+                        parent.location.href = "gameover.html";
+                    } else {
+                        digit.innerHTML = "남은 시간: " + width + "초";
+                        width--;
+                        elem.style.width = width + "px";
+                    }
+
+                }
             }
-		
         }
-    }
-}
-</script>
-		<img id="bgimg" src="./img/sphinx.png">
-		<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
-		<script src="./js/cursor.js"></script>
-    </body>
-</html>
+    </script>
+    <img id="bgimg" src="./img/sphinx.png">
+    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+    <script src="./js/cursor.js"></script>
+</body>
 
+</html>
