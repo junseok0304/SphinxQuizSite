@@ -11,11 +11,7 @@
         <title>Q1.</title>
 		<link rel="stylesheet" href="./css/quiz.css">
 	<style>
-		.sub {
-
-		}
 	</style>
-
     </head>
     <body>
 		<header>
@@ -37,7 +33,18 @@
 	<h3 class="co" style="font-size: 45px;">시간안에 답을 맞춰라!!!!</h3>
 </div>
 <div class="sub">
-
+    <form name="form">
+        <input type="radio" name="answer" value="v1" style="width:30px;height:30px;border:1px;">풋볼<br>
+        <input type="radio" name="answer" value="v2" style="width:30px;height:30px;border:1px;">중요한건 사우디의 꺾이지않는 마음<br>
+        <input type="radio" name="answer" value="v3" style="width:30px;height:30px;border:1px;">바나나킥<br>
+        <input type="radio" name="answer" value="v4" style="width:30px;height:30px;border:1px;">풉킥풉킥<br>
+        <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_1()">
+    <script type="text/javascript">
+    function quiz_1() {
+    if(form.answer[2].checked==true) window.location.href="Q2.html";
+    else window.location.href="gameover.html";
+    }
+    </script>
 </div>
 
 <script>
@@ -57,7 +64,7 @@ window.onload = function start() {
                 i=400;
                 digit.innerHTML = "남은 시간: " + width + "초";
                 alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
-				window.location.href="gameover.html";
+				parent.location.href="gameover.html";
             } else {
                 digit.innerHTML = "남은 시간: " + width + "초";
                 width--;

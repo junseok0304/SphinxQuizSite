@@ -98,7 +98,7 @@ html {
 
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -112,8 +112,45 @@ html {
     font-weight: bolder;
 }
 
+.qbutton {
+    background-color: #0c8e46;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.qimg {
+    width: 320px;
+    height: 280px;
+}
+
+.sub {
+    position: fixed;
+    top: 25%;
+    left: 55%;
+    background-color: #36a3f1;
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
 #buttonbgm {
-    background-color: #eea941; /* Green */
+    background-color: #eea941;
     border: none;
     color: white;
     padding: 15px 32px;

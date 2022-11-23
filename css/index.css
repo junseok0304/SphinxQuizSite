@@ -14,6 +14,8 @@ html {
 header {
     display: flex;
     align-items: center;
+    background: cadetblue;
+    padding: 20px;
 }
 
 h1 {
@@ -44,11 +46,6 @@ ul {
 
 li.icon {
     flex-basis: 25%;
-}
-
-header {
-    background: cadetblue;
-    padding: 20px;
 }
 
 a {
@@ -87,7 +84,7 @@ a:hover {
 
 
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -102,7 +99,7 @@ a:hover {
 }
 
 #buttonbgm {
-    background-color: #eea941; /* Green */
+    background-color: #eea941;
     border: none;
     color: white;
     padding: 15px 32px;
