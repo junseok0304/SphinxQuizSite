@@ -96,6 +96,15 @@ html {
     box-sizing: inherit;
 }
 
+table {
+    width: 300px;
+    height: 200px;
+    background-color: #f1f1c1;
+    color: black;
+    }
+    table, th, td {
+    border: 1px solid #bcbcbc;
+    }
 
 .button {
     background-color: #4CAF50;
@@ -139,6 +148,23 @@ html {
     background-color: #36a3f1;
     border: none;
     color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.q3sub {
+    position: fixed;
+    top: 54%;
+    left: 55%;
+    background-color: #e4d888;
+    border: none;
+    color: black;
     padding: 30px 60px;
     text-decoration: none;
     display: inline-block;
