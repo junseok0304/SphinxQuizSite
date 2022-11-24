@@ -64,6 +64,10 @@ li.icon {
     
 }
 
+.button:hover {
+    background: rgb(242, 139, 139);
+}
+
 @keyframes firework {
     0% { transform: translate(var(--x), var(--initialY)); width: var(--initialSize); opacity: 1; }
     50% { width: 0.5vmin; opacity: 1; }

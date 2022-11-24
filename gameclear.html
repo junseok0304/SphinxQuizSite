@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Title" content="gameclear" />
-    <meta http-equiv="Author" content="윤준석" />
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Title" content="gameclear"/>
+    <meta http-equiv="Author" content="윤준석"/>
     <title>G A M E CLEAR!</title>
     <link rel="stylesheet" href="./css/gameclear.css">
     <script>
@@ -18,7 +18,6 @@
             let newDIV = document.createElement("div");
             newDIV.innerHTML =
                 "스핑크스 : 약속한 대로 상을 주겠다!!<br>근데, 그 전에 말이지...<br>이건 10년 전 내가 이집트에 있을 때 말이네...<br>어쩌구 저쩌구.. TMI...<br>어쩌구 저쩌구.. TMI...<br><br>사람: 뭐야... 뭐저리 말이 많아..<br><br>이 문구 영역을 클릭해 들어가 보자!"
-            //newDIV.style.backgroundColor = "yellow";
             newDIV.style.fontSize = "x-large";
             newDIV.style.color = "RED";
             newDIV.style.fontWeight = "bold"
@@ -33,11 +32,11 @@
         }
     </script>
     <header>
-        <h1 class="stopload" onload="">G A M E C L E A R !</h1>
+        <h1 class="stopload">G A M E C L E A R !</h1>
         <nav>
             <ul>
                 <form>
-                    <button class="button" type="button" onclick="location.href='index.html'">메인으로</button>
+                    <button class="button" type="button" onclick="location.href='./index.html'">메인으로</button>
                 </form>
             </ul>
         </nav>
@@ -61,8 +60,8 @@
     <audio onloadstart="this.volume=0.3" autoplay>
         <source src="./bgm/gamewin.mp3" type="audio/mp3">
     </audio>
-    <img id="bgimg" src="./img/sphinxclear.jpeg">
-    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+    <img id="bgimg" src="./img/sphinxclear.jpeg" alt="이미지를 표현할 수 없습니다.">
+    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png" alt="이미지를 표현할 수 없습니다.">
     <script src="./js/cursor.js"></script>
 </body>
 

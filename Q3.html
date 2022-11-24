@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Title" content="QUIZ3" />
-    <meta http-equiv="Author" content="윤준석" />
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Title" content="QUIZ3"/>
+    <meta http-equiv="Author" content="윤준석"/>
     <title>Q3.</title>
     <link rel="stylesheet" href="./css/quiz.css">
 </head>
@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <form>
-                    <button class="button" type="button" onclick="location.href='Q3.html'">
+                    <button class="button" type="button" onclick="location.href='./Q3.html'">
                         <div id="digit"></div>
                     </button>
                 </form>
@@ -66,8 +66,8 @@
             <input type="button" class="qbutton" name="선택" value="정답 제출하기" onclick="quiz_3()">
             <script type="text/javascript">
                 function quiz_3() {
-                    if (form.answer[1].checked == true) parent.location.href = "gameclear.html";
-                    else parent.location.href = "gameover.html";
+                    if (form.answer[1].checked == true) parent.location.href = "./gameclear.html";
+                    else parent.location.href = "./gameover.html";
                 }
             </script>
     </div>
@@ -88,7 +88,7 @@
                         i = 400;
                         digit.innerHTML = "남은 시간: " + width + "초";
                         alert("시간이 초과 되었다!!!! 널 잡아먹겠다!!!!");
-                        parent.location.href = "gameover.html";
+                        parent.location.href = "./gameover.html";
                     } else {
                         digit.innerHTML = "남은 시간: " + width + "초";
                         width--;
@@ -99,8 +99,8 @@
             }
         }
     </script>
-    <img id="bgimg" src="./img/sphinx.png">
-    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+    <img id="bgimg" src="./img/sphinx.png" alt="이미지를 표현할 수 없습니다.">
+    <img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png" alt="이미지를 표현할 수 없습니다.">
     <script src="./js/cursor.js"></script>
 </body>
 

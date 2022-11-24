@@ -98,6 +98,10 @@ a:hover {
     font-weight: bolder;
 }
 
+.button:hover {
+    background: rgb(69, 99, 8);
+}
+
 #buttonbgm {
     background-color: #eea941;
     border: none;

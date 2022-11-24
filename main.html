@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="imagetoolbar" content="no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta http-equiv="Title" content="스핑크스 퀴즈" />
-	<meta http-equiv="Author" content="윤준석" />
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Title" content="스핑크스 퀴즈"/>
+	<meta http-equiv="Author" content="윤준석"/>
 	<title>스핑크스 퀴즈</title>
 	<link rel="stylesheet" href="./css/index.css">
 </head>
@@ -20,12 +20,12 @@
 		<nav>
 			<ul>
 				<form>
-					<button class="button" type="button" onclick="location.href='Q1.html'">게임 시작</button>
-					<button class="button" type="button" onclick="location.href='Q1.html'">Q1</button>
-					<button class="button" type="button" onclick="location.href='Q2.html'">Q2</button>
-					<button class="button" type="button" onclick="location.href='Q3.html'">Q3</button>
-					<button class="button" type="button" onclick="parent.location.href='gameover.html'">게임 오버</button>
-					<button class="button" type="button" onclick="parent.location.href='gameclear.html'">게임 클리어</button>
+					<button class="button" type="button" onclick="location.href='./Q1.html'">게임 시작</button>
+					<button class="button" type="button" onclick="location.href='./Q1.html'">Q1</button>
+					<button class="button" type="button" onclick="location.href='./Q2.html'">Q2</button>
+					<button class="button" type="button" onclick="location.href='./Q3.html'">Q3</button>
+					<button class="button" type="button" onclick="parent.location.href='./gameover.html'">게임 오버</button>
+					<button class="button" type="button" onclick="parent.location.href='./gameclear.html'">게임 클리어</button>
 				</form>
 			</ul>
 		</nav>
@@ -40,13 +40,13 @@
 	</div>
 	<!-- 게임 시작 버튼(position fixed) -->
 	<form class="startbutton">
-		<button class="custom-btn btn-12" type="button" onclick="location.href='Q1.html'"><span>눌러서 게임 시작!</span><span
+		<button class="custom-btn btn-12" type="button" onclick="location.href='./Q1.html'"><span>눌러서 게임 시작!</span><span
 				class="blinking">게임 시작</span></button>
 	</form>
 
 	<!-- 배경 및 커서 이미지 -->
-	<img id="bgimg" src="./img/sphinx.png">
-	<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png">
+	<img id="bgimg" src="./img/sphinx.png" alt="이미지를 표현할 수 없습니다.">
+	<img id="cursorimg" style="position:absolute; left:0; top:0; z-index:999;" src="./img/nobg45.png" alt="이미지를 표현할 수 없습니다.">
 
 	<!-- js 파일 불러오기 -->
 	<script src="./js/cursor.js"></script>

@@ -29,6 +29,10 @@ body {
     font-weight: bolder;
 }
 
+#buttonbgm:hover {
+    background: rgb(232, 194, 5);
+}
+
 h2 {
     color: white;
     position: fixed;

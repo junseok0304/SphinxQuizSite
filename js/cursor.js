@@ -3,7 +3,7 @@
 	var mouseY = 0; 
 
 	function getMousePosition(e){
-		var eObj = window.event? window.event : e; // IE, FF 대응
+		var eObj = window.event? window.event : e; // IE 대응
 		mouseX = eObj.clientX;
 		mouseY = eObj.clientY + document.documentElement.scrollTop; // 화면을 스크롤 했을때를 위한 처리 스크롤 양 만큼 마우스 Y좌표에+
 	}

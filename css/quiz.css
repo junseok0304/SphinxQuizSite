@@ -136,6 +136,10 @@ table {
     font-weight: bolder;
 }
 
+.qbutton:hover {
+    background: rgb(127, 188, 3);
+}
+
 .qimg {
     width: 320px;
     height: 280px;
