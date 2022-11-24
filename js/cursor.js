@@ -14,8 +14,8 @@
 		var m_y = parseInt(document.getElementById('cursorimg').style.top.replace('px', ''));
 
 		// 이미지 움직이기
-		document.getElementById('cursorimg').style.left = Math.round(m_x + ((mouseX - m_x) / 5)) + 'px';
-		document.getElementById('cursorimg').style.top = Math.round(m_y + ((mouseY - m_y) / 5)) + 'px';
+		document.getElementById('cursorimg').style.left = Math.round(m_x +6 + ((mouseX - m_x) / 5)) + 'px';
+		document.getElementById('cursorimg').style.top = Math.round(m_y +6 + ((mouseY - m_y) / 5)) + 'px';
 
 	}
     
