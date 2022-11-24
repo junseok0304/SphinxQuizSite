@@ -158,6 +158,23 @@ table {
     font-weight: bolder;
 }
 
+.q2sub {
+    position: fixed;
+    top: 25%;
+    left: 59%;
+    background-color: #36a3f1;
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
 .q3sub {
     position: fixed;
     top: 40%;
